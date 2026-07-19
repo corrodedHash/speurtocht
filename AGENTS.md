@@ -35,3 +35,10 @@
 - Use Tailwind v4 syntax (`@theme inline`, no `@apply`)
 - All text/UI in German (app is for a German wedding retreat)
 - eslint config is in eslint.config.mjs
+
+## Release
+
+- Release workflow is configured via release-please
+- Push conventional commits (`feat:`, `fix:`, etc.) to `main` – release-please creates/updates a Release PR
+- Merge the Release PR → release-please tags the release and creates a GitHub Release
+- No build artifacts are uploaded (app is deployed separately from the VPS)
